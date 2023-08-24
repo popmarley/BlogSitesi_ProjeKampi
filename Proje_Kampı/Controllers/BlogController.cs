@@ -15,6 +15,7 @@ namespace Proje_Kampı.Controllers
 
 		public IActionResult BlogReadAll(int id)
 		{
+			ViewBag.i = id;
 			var values = bm.GetBlogID(id);
 			return View(values);
 		}
